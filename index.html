@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redeem the Time - KJV</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      background-color: #f8f8f0;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    blockquote {
+      font-size: 1.5em;
+      font-style: italic;
+      max-width: 700px;
+      margin: 20px auto;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #666;
+    }
+    /* Uncomment below when ready to add images */
+    /*
+    #art {
+      margin-top: 30px;
+    }
+    #art img {
+      max-width: 500px;
+      max-height: 400px;
+      border: 2px solid #ccc;
+      margin: 10px;
+    }
+    */
+  </style>
+</head>
+<body>
+  <h1>Redeem the Time</h1>
+  <blockquote id="verse">Loading verse...</blockquote>
+
+  <!-- Placeholder image area for future Ruckman artwork -->
+  <!--
+  <div id="art">
+    <img src="path/to/ruckman-painting1.jpg" alt="Painting by Peter Ruckman">
+    <img src="path/to/ruckman-painting2.jpg" alt="Painting by Peter Ruckman">
+  </div>
+  -->
+
+  <footer>KJV - King James Bible</footer>
+
+  <script>
+    const verses = [
+      "I will set no wicked thing before mine eyes: I hate the work of them that turn aside; it shall not cleave to me. – Psalm 101:3",
+      "Redeeming the time, because the days are evil. – Ephesians 5:16",
+      "Wherewithal shall a young man cleanse his way? by taking heed thereto according to thy word. – Psalm 119:9",
+      "But put ye on the Lord Jesus Christ, and make not provision for the flesh, to fulfil the lusts thereof. – Romans 13:14",
+      "This I say then, Walk in the Spirit, and ye shall not fulfil the lust of the flesh. – Galatians 5:16",
+      "Let the words of my mouth, and the meditation of my heart, be acceptable in thy sight, O LORD, my strength, and my redeemer. – Psalm 19:14",
+      "Flee also youthful lusts: but follow righteousness, faith, charity, peace… – 2 Timothy 2:22",
+      "Abstain from all appearance of evil. – 1 Thessalonians 5:22",
+      "The eyes of the LORD are in every place, beholding the evil and the good. – Proverbs 15:3",
+      "Be not wise in thine own eyes: fear the LORD, and depart from evil. – Proverbs 3:7",
+      "Thy word have I hid in mine heart, that I might not sin against thee. – Psalm 119:11",
+      "As he thinketh in his heart, so is he… – Proverbs 23:7",
+      "Neither give place to the devil. – Ephesians 4:27",
+      "Turn away mine eyes from beholding vanity; and quicken thou me in thy way. – Psalm 119:37",
+      "Walk in wisdom toward them that are without, redeeming the time. – Colossians 4:5",
+      "He that walketh uprightly walketh surely: but he that perverteth his ways shall be known. – Proverbs 10:9",
+      "For God hath not called us unto uncleanness, but unto holiness. – 1 Thessalonians 4:7",
+      "Keep thy heart with all diligence; for out of it are the issues of life. – Proverbs 4:23",
+      "Watch and pray, that ye enter not into temptation: the spirit indeed is willing, but the flesh is weak. – Matthew 26:41",
+      "Blessed are the pure in heart: for they shall see God. – Matthew 5:8"
+    ];
+
+    let idx = 0;
+    function rotateVerse() {
+      document.getElementById("verse").innerText = verses[idx % verses.length];
+      idx++;
+    }
+
+    rotateVerse();
+    setInterval(rotateVerse, 10000); // every 10 seconds
+  </script>
+</body>
+</html>
